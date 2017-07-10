@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins|Audiowide|Rock+Salt" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-default" id="navigation">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" id="appLogo" href="#">Dev Leppard</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="navItems active"><a href="/home">Home<span class="sr-only">(current)</span></a></li>
+	        <li class="navItems"><a href="/view">Project Status</a></li>
+	        <li class="navItems"><a href="/contact">Contact</a></li>
+	        <li class="navItems"><a href="/form">New Client Form</a></li>
+	      </ul>
+	      
+	      <ul class="nav navbar-nav navbar-right">
+	        <form class="nav navbar-nav navbar-right" action="/signOut" method="get">
+	        	<button>Sign Out</button>
+	        </form>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+	<div class="jumbotron" id="jumboMain">
+		<h2 id="welcomeHome">Welcome</h2>
+<!-- 		add javascript here to update a welcome message with person's name
+ -->
+		<div class="col-lg-3">
+			<h3 class="subHeader">View My Project</h3>
+			<a href="/view"><img src="assets/images/view.png" alt="" class="iconImg"></a>
+		</div>
+		<div class="col-lg-3">
+			<h3 class="subHeader">Contact A Developer</h3>
+			<a href="/contact"><img src="assets/images/contact.png" alt="" id="contact"></a>
+		</div>
+		<div class="col-lg-3">
+			<h3 class="subHeader">New Project Form</h3>
+			<a href="/form"><img src="assets/images/form.png" alt="" id="form"></a>
+		</div>
+		<div class="col-lg-3">
+			<h3 class="subHeader">Upload Files</h3>
+			<a href="https://drive.google.com/drive/folders/0B_Sl3Ld4YH9vSGc0cDFVY29SNVU?usp=sharing"><img src="assets/images/upload.png" alt="" id="upload"></a>
+		</div>
+ 	</div>
+
+
+	<!-- <nav class="navbar navbar-default">
+	    <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#"> -->
+		        <!-- <img alt="Brand" src="..."> -->
+		        <!-- <p>APP NAME</p>
+		      </a>
+		    </div>
+		    <li>test</li>
+		    <li>test2</li>
+		    <form class="nav navbar-nav navbar-right" action="/signOut" method="get">
+	        	<button>Sign Out</button>
+	        </form>
+	    </div>
+	</nav> -->
+<!-- scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>			
+</body>
+</html>

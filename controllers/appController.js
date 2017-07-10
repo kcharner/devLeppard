@@ -1,0 +1,14 @@
+//dependencies
+var express = require('express');
+var router  = express.Router();
+var path = require('path');
+
+//set-up routing for application landing page
+var router = express();
+
+router.get('/', function(req,res) {
+	res.render('index');
+});
+
+//export
+module.exports = router;

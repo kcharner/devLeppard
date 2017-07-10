@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins|Audiowide|Rock+Salt" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-default" id="navigation">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" id="appLogo" href="/dashboard">Dev Leppard</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="navItems active"><a href="/dashboard">Dashboard<span class="sr-only">(current)</span></a></li>
+	        <li class="dropdown navItems">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Projects<span class="caret"></span></a>
+	            <ul class="dropdown-menu">
+	                <li><a href="/myprojects">New</a></li>
+	                <li><a href="/viewProjects">Current</a></li>
+	            </ul>
+	        </li>
+	        <li class="navItems"><a href="/contactclient">Contact Client</a></li>
+	        <!-- <li class="navItems"><a href="/search">Client Search</a></li> -->
+	      </ul>
+	      
+	      <ul class="nav navbar-nav navbar-right">
+	        <form class="nav navbar-nav navbar-right" action="/signOut" method="get">
+	        	<button>Sign Out</button>
+	        </form>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	<div class="col-lg-6 form">
+		<h2>Create New Project</h2>
+		<form action="/createProject" method="post" role="form">
+			<div class="form-group">
+				<label for="project_name">Project Name</label>
+				<input type="text" name="project_name" class="form-control" id="project_name" placeholder="Dev Leppard" required/>
+			</div>
+			<div class="form-group">
+				<label for="project_type">Project Type</label>
+				<input type="dropdown" name="project_type" class="form-control" id="project_type" placeholder="Website Refresh" required/>
+			</div>
+			<!-- <div class="dropdown">
+			  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project Management Methodology</button>
+			  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				    <a class="dropdown-item" href="#">Agile</a>
+				    <a class="dropdown-item" href="#">Spiral</a>
+				    <a class="dropdown-item" href="#">Waterfall</a>
+			  	</div>
+			</div> -->
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary" value="Create">Create Project</button>
+			</div>	
+		</form>
+	</div>
+	<div class="col-lg-6 form">
+		<h2>Create New Task</h2>
+		<form action="/createTask" method="post" role="form">
+			<div class="form-group">
+				<label for="task_name">Task Name</label>
+				<input type="text" name="task_name" class="form-control" id="task_name" placeholder="planning" required/>
+			</div>
+			<div class="form-group">
+				<label for="resource">Project Name</label>
+				<input type="text" name="resource" class="form-control" id="resource" placeholder="Dev Leppard" required/>
+			</div>
+			<div class="form-group">
+				<label for="start_date">Start Date</label>
+				<input type="date" name="start_date" class="form-control" id="start_date" required/>				  	        
+			</div>
+			<div class="form-group">
+				<label for="end_date">End Date</label>
+				<input type="date" name="end_date" class="form-control" id="end_date" required/>				  	        
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary" value="Create">Create Task</button>
+			</div>	
+		</form>
+	</div>
+
+
+<!-- scripts -->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <div id="chart_div"></div>
+    <div></div>
+<!-- <script type="text/javascript" src="../assets/js/script.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>			
+</body>
+</html>
